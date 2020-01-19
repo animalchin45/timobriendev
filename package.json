@@ -1,0 +1,28 @@
+{
+  "name": "porfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "compile:sass": "node-sass sass/main.scss public/css/styles.css -w",
+    "autoprefix": "postcss public/css/styles.css -u autoprefixer -r",
+    "dev": "nodemon src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^9.7.3",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "path": "^0.12.7",
+    "postcss-cli": "^7.1.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.0",
+    "nodemon": "^1.19.4"
+  }
+}
