@@ -1,0 +1,130 @@
+.hero {
+    height: 100vh;
+
+    &__image {
+        justify-content: center;
+        align-items: center;
+
+        & li {
+            list-style: none;
+            width: 30rem;
+            height: 30rem;
+            background-position: center;
+            background-size: cover;
+            border-radius: .5rem;
+            box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+        }
+    }
+}
+
+@media (max-width: $mobile-break) {
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__image {
+            height: 25vh;
+            margin-bottom: 4rem;
+            
+            & li {
+                width: 16rem;
+                height: 16rem;
+            }
+        }
+
+        & .content {
+            height: 50vh;
+        }
+    }
+}
+
+.skills {
+    justify-content: center;
+    height: 100vh;
+
+    &__list {
+        
+    }
+
+    &__icons {
+        display: flex;
+        width: 48rem;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: $mobile-break) {
+    .skills {
+
+        &__list {
+            width: 85vw;
+        }
+
+        &__icons {
+            width: 85vw;
+        }
+    }
+}
+
+.work {
+    height: 300vh;
+
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-size: cover;
+        transform: scale(1);
+        transition: transform 20s linear;
+
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
+}
+
+@media (max-width: $mobile-break) {
+    .work {
+        flex-direction: column;
+        height: 325vh;
+
+        &__portfolio {
+            order: 2;
+        }
+
+        &__description {
+            order: 1;
+            height: 25vh;
+        }
+
+        &__about {
+            width: 85vw;
+        }
+    }
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    height: 100vh;
+
+    &__icons {
+        display: flex;
+        justify-content: space-evenly;
+        width: 15rem;
+
+    }
+}
+
+@media (max-width: $mobile-break) {
+    .contact {
+        flex-direction: column;
+        justify-content: center;
+        height: 50vh;
+    }
+}

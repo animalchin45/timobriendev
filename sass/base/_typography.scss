@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Marcellus";
+    src: url(../fonts/Marcellus-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+body {
+    font-family: "Roboto-Regular", sans-serif;
+    color: $color-black;
+    font-size: 2rem;
+}
+
+.heading-primary {
+    font-family: "Marcellus", serif;
+    font-size: 6rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: $text-shadow;
+    color: $color-primary;
+}
+
+.heading-secondary {
+    font-family: "Marcellus", serif;
+    font-size: 3rem;
+    text-align: center;
+    // text-transform: uppercase;
+    letter-spacing: 2px;
+    // text-shadow: $text-shadow;
+    color: $color-primary;
+}
+
+.heading-work {
+    font-family: "Marcellus", serif;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: $text-shadow;
+    color: $color-white;
+    position: relative;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 6rem;
+}
+
+li {
+    list-style: none; 
+    line-height: 3.5rem;
+}
+
+@media (max-width: $mobile-break) {
+    body {
+        font-size: 1.6rem;
+    }
+
+    .heading-main{
+        font-size: 3rem;
+    }
+}

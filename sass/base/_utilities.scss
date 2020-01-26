@@ -1,0 +1,46 @@
+.u-margin-bottom {
+    margin-bottom: 2rem;
+}
+
+.u-text-align-left {
+    text-align: left;
+}
+
+.u-padding-right {
+    padding-right: 20rem;
+}
+
+.u-padding-left {
+    padding-left: 20rem;
+}
+
+.u-sticky {
+    position: sticky;
+    top: 0;
+}
+
+.u-mobile-show-on {
+    display: none;
+}
+
+.u-mobile-show-off {
+    display: flex;
+}
+
+@media (max-width: $mobile-break) {
+    .u-float-right {
+        float: none;
+    }
+
+    .u-sticky{
+        position: relative;
+    }
+
+    .u-mobile-show-on {
+        display: flex;
+    }
+
+    .u-mobile-show-off {
+        display: none;
+    }
+}

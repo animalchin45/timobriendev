@@ -1,0 +1,40 @@
+.content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    &--hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &--title {
+        width: 50rem;
+    }
+
+    &--work {
+        position: relative;
+    }
+
+    &--article {
+        width: 50rem;
+    }
+}
+
+@media (max-width: $mobile-break) {
+    .content {
+
+        &--article {
+            width: 85vw;
+        }
+
+        &--title {
+            width: 85vw;
+        }
+    }
+}

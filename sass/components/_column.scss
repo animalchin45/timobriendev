@@ -1,0 +1,28 @@
+.column {
+    display: flex;
+    flex-direction: column;
+    
+    &--hero {
+        justify-content: center;
+        width: 50%;
+    }
+
+    &--work {
+        width: 50%;
+    }
+}
+
+@media (max-width: $mobile-break) {
+    .column {
+
+        &--hero {
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        &--work {
+            width: 100%
+        }
+    }
+}
